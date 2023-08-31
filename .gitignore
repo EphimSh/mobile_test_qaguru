@@ -2,3 +2,5 @@
 /build
 /.gradle
 *.class
+junit-appium-app-browserstack-sdk.zip
+/junit-appium-app-browserstack-sdk
