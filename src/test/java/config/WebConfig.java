@@ -7,7 +7,6 @@ import org.aeonbits.owner.Config;
 public interface WebConfig extends Config {
 
     @Key("remoteDriverUrl")
-    @DefaultValue("http://hub.browserstack.com/wd/hub")
     String getRemoteUrl();
 
     @Key("username")
