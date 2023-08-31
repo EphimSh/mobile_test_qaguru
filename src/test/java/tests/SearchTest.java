@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 @Owner("EphimSh")
 @Feature("browserstack: wikipedia title search")
-@Tag("successful search")
+@Tag("successful_search")
 public class SearchTest extends TestBase{
     @Test
     void successfulSearchTest() throws MalformedURLException, InterruptedException {
