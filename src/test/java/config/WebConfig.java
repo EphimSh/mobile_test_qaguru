@@ -2,11 +2,12 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-
-@Config.Sources("classpath:config/remote.properties")
+@Config.LoadPolicy(Config.LoadType.MERGE)
+@Config.Sources("classpath:config/${env}.properties")
 public interface WebConfig extends Config {
 
     @Key("remoteDriverUrl")
+    @DefaultValue("http://hub.browserstack.com/wd/hub")
     String getRemoteUrl();
 
     @Key("username")
