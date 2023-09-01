@@ -45,7 +45,7 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
-
+    systemProperties(System.getProperties())
     testLogging {
         lifecycle {
             events "started", "skipped", "failed", "standard_error", "standard_out"
@@ -54,8 +54,14 @@ tasks.withType(Test) {
     }
 }
 
-task search_test(type: Test) {
+task test_android(type: Test) {
     useJUnitPlatform {
-        includeTags 'successful_search'
+        includeTags 'android'
+    }
+}
+
+task test_ios(type: Test) {
+    useJUnitPlatform {
+        includeTags 'ios'
     }
 }
