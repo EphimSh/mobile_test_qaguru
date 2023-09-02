@@ -12,7 +12,7 @@ import javax.annotation.Nonnull;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BrowserStackDriver implements WebDriverProvider {
+public class AndroidBrowserStackDriver implements WebDriverProvider {
     static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
     @Nonnull
     @Override
